@@ -16,10 +16,14 @@ test {
 }
 
 jacocoTestReport {
+<<<<<<< HEAD:Recherche/build.gradle~
 	reports {
+=======
+	reports {
+>>>>>>> refs/remotes/origin/FonctionTrier:Trier/build.gradle
 			xml.enabled false
 			csv.enabled false
-			html.destination "$(buildDir}/jacocoHtml"
+			html.destination "${buildDir}/jacocoHtml"
 	}
 }
 
