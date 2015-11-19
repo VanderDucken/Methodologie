@@ -1,5 +1,7 @@
-package classe;
+package org.univ;
 import java.util.*;
+
+import org.junit.Test;
 
 public class Tableau extends ArrayList {
     public Tableau(){
@@ -7,7 +9,8 @@ public class Tableau extends ArrayList {
     }
    
     // Méthodes:
-   
+    
+     
     private int plusPetit(ArrayList rech) {
        
         int indice = 0;
@@ -21,7 +24,8 @@ public class Tableau extends ArrayList {
        
         return indice;
     }
-   
+    
+    @Test
     public void tri() {
         for (int i = 0; i < this.size(); i++) {
             Object echange = this.get(i);
@@ -36,16 +40,8 @@ public class Tableau extends ArrayList {
             this.set(i + indice_temp, echange);
         }
     }
-   
-    public ArrayList recherche(Object rech) {
-        ArrayList res = new ArrayList();
-       
-        for (int i = 0; i < this.size(); i++)
-            if (rech.equals(this.get(i)))
-                res.add(new Integer(i));
-       
-        return null;
-    }
+    
+    
    
     public String toString() {
         String s = new String("");

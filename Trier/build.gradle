@@ -12,14 +12,14 @@ dependencies {
 }
 
 test {
-	sstemProperties 'property': 'value'
+	systemProperties 'property': 'value'
 }
 
-jacocoTesReport {
-	reports {
+jacocoTestReport {
+	reports {
 			xml.enabled false
 			csv.enabled false
-			html.destination "$(buildDir}/jacocoHtml"
+			html.destination "${buildDir}/jacocoHtml"
 	}
 }
 
